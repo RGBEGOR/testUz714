@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Технические тесты</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Проверочные тесты</h1>
+        <p>Для самастоятельной проверки знаний и закрепления пройденной темы</p>
+    </header>
+
+    <div class="container">
+        <section id="p0">
+            <h3>1 Первые учебные заведения, где получали образование после мактаба (школы), назывались «…». В них преподавали шейхи, хакимы или устозы. 
+            </h3>
+            <label>
+                <input type="radio"  value="1"  name="p0" onclick="respuesta(0,this)"> Меджлисы
+            </label>
+            <label>
+                <input type="radio"  value="2"  name="p0" onclick="respuesta(0,this)"> Мактабы
+            </label>
+            <label>
+                <input type="radio"  value="3"  name="p0" onclick="respuesta(0,this)"> Медресе
+            </label>
+        </section>
+        <section id="p1">
+            <h3>2 - Шейхи, хакимы или устозы все они в XI веке звались …  </h3>
+            <label>
+                <input type="radio"  value="1"  name="p1" onclick="respuesta(1,this)"> Царями
+            </label>
+            <label>
+                <input type="radio"  value="2"  name="p1" onclick="respuesta(1,this)"> Преподавателями
+            </label>
+            <label>
+                <input type="radio"  value="3"  name="p1" onclick="respuesta(1,this)"> Правителями областей
+            </label>
+        </section>
+        <section id="p2">
+            <h3>3 - Самая известная письменность Самарканда Бухары , язык основан на арамейской писменности, язык торговцев и деловых людей с древности это </h3>
+            <label>
+                <input type="radio"  value="1"  name="p2" onclick="respuesta(2,this)"> Хорезмийский
+            </label>
+            <label>
+                <input type="radio"  value="2"  name="p2" onclick="respuesta(2,this)"> Бактрийский
+            </label>
+            <label>
+                <input type="radio"  value="3"  name="p2" onclick="respuesta(2,this)"> Согдийский
+            </label>
+        </section>
+        <section id="p3">
+            <h3>4 - Древнейшая религия региона Средней Азии в частности древнего Хорезм  это ?  </h3>
+            <label>
+                <input type="radio"  value="1"  name="p3" onclick="respuesta(3,this)"> Зороастризм
+            </label>
+            <label>
+                <input type="radio"  value="2"  name="p3" onclick="respuesta(3,this)"> Манихейство
+            </label>
+            <label>
+                <input type="radio"  value="3"  name="p3" onclick="respuesta(3,this)"> Язычество
+            </label>
+        </section>
+        <section id="p4">
+            <h3>5 - Виды письменности при эфталитах -</h3>
+            <label>
+                <input type="radio"  value="1"  name="p4" onclick="respuesta(4,this)"> Согдийская
+            </label>
+            <label>
+                <input type="radio"  value="2"  name="p4" onclick="respuesta(4,this)"> верные ответы 1 и 3
+            </label>
+            <label>
+                <input type="radio"  value="3"  name="p4" onclick="respuesta(4,this)"> Хорезмийская
+            </label>
+        </section>
+
+        <button onclick="corregir()">ПРОВЕРИТЬ</button>
+        <h2>Ваши правильные ответы: <span id="resultado"></span></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
